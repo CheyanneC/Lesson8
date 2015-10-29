@@ -205,8 +205,7 @@ public class StudentGUI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
-        if(size <= 10)
-        {
+
             StudentPopup form = new StudentPopup(this, true);
             form.setModal(true);
             form.setLocationRelativeTo(this);
@@ -225,12 +224,6 @@ public class StudentGUI extends javax.swing.JFrame
             }
             else
                 JOptionPane.showMessageDialog(this, em);
-        }
-        
-        else
-        {
-            JOptionPane.showMessageDialog(this, "Maximum students.");
-        }
     }//GEN-LAST:event_btnaddActionPerformed
 
     private void btnprevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnprevActionPerformed
